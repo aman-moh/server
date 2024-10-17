@@ -17,7 +17,7 @@ import traceback
 import logging
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/api/*": {"origins": ["https://client-production-296b.up.railway.app"]}})
 
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
